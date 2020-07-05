@@ -1,0 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+        
+body {
+    font-family: 'Futura';
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Futura';
+    font-weight: normal;
+}
+
+.remark-code,
+.remark-inline-code {
+    font-family: 'Ubuntu Mono';
+}
