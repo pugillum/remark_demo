@@ -38,17 +38,16 @@ class: center, middle
 
   <head>
     <style type="text/css">
-      /* Slideshow styles */ 
+      /* Here be styles */ 
     </style>
   </head>
 
   <body>
-     <script src="remark.js">
-    </script>
+    <script src="remark.js"></script>
     <script>
        var slideshow = remark.create({
             sourceUrl: 'slides.md'
-        });
+       });
     </script>
   </body>
 </html>
@@ -99,7 +98,7 @@ And look you can add some notes too
 
 ---
 
-# But how does that work with 2 screens?
+# But 2 screens?
 
 ---
 
@@ -115,5 +114,7 @@ layout: true
 - slide properties
 - inline CSS
 - syntax highlighting
+
+---
 
 
