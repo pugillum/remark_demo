@@ -1,12 +1,13 @@
-class: center, middle
+class: demo, center, middle
+
 
 # Remark
 A presentation about a presentation tool
 
----
-class: center, middle
+???
 
-# How it works
+An interesting way to make a slide deck using Remark
+
 ---
 
 ### 1. Content, layout and styling in markdown
@@ -15,22 +16,34 @@ class: center, middle
 ```markdown
     ---
     class: center, middle
-    # Cover slide
+
+    # .white[Cover slide]
     background-image: url(images/slides/background.jpg)
     background-size: contain
+
     ---
-    # Slide with **meme**
-    .width-80[
-        ![](images/slides/meme.jpg)
-    ]
+    
+    # **meme**
+    ![](images/slides/meme.jpg)
+    
     ---
+
     # This
     1. Has 
     2. A
     3. List
     4. Mindblowing stuff, eh?
+
     ---
 ```
+???
+
+Setup is effectively a 2 step process:
+- Firstly, create a markdown file using triple dashes to indicate page separators
+- Simple layout can be defined using a class key-value pair
+- CSS styling can be linked by wrapping in square brackets and referencing the CSS class
+- Everything else can just follow markdown
+
 ---
 
 ### 2. Create an HTML file
@@ -54,41 +67,50 @@ class: center, middle
   </body>
 </html>
 ```
+
+???
+
+Secondly define your layout in an HTML file
+- You can link in any styles to configure the look and feel
+- Link in the remark.js library to provide the mapping of the markdown (and quite a few extras)
+- The markdown can added directly into the HTML or linked
+
 ---
 
 ### 3. Open your file
 - directly in browser, or
-- using something like `http.server`
+- or use a static server like `http.server`
 
 ---
 class: center, middle
 background-image: url(images/slides/background.jpg)
 background-size: contain
-# Cover slide
+
+# .white[Cover slide]
+
 ---
 # Slide with **meme**
-.width-80[
-    ![](images/slides/meme.jpg)
-]
+![](images/slides/meme.jpg)
+
 ---
 # This
 
-1. has
+1. .red[has]
 --
 
-2. a
+2. .orange[a]
 --
 
-3. list
+3. .yellow[list]
 --
 
-4. using
+4. .green[using]
 --
 
-5. incremental
+5. .blue[incremental]
 --
 
-6. slides
+6. .indigo[slides]
 --
 
 7. which could get annoying if overused...
@@ -99,42 +121,51 @@ layout: true
 
 ---
 
-# Presentation mode (the P key)
+# Keyboard shortcuts FTW!
 
 ???
 
-# And look you can add some notes too
+# Here be some notes
+- P = presentation
+- C = bring on the clones
+- F = Full screen
 
----
-
-# But 2 screens?
-
----
-
-# Cloning (the C key)
+> "A quote to inspire generations will not be said at this point in time"
 
 ---
 layout: true
 
 ---
-## Some other nice features
-- comments
+## Additionally
 - template slides
-- slide properties
-- inline CSS
-- syntax highlighting
-- slide linking
-
----
-# But wait, there's more!
+- slide referencing
+- events
+- timers
+- comments
 
 ---
 
 ## Code formatting and highlighting
-```ts
-def add_some_numbers(a,b):
-*   a, b = "wtf!", "wtf!"
-    return a + b
+```python
+class MockRequest(object):
+    def __init__(self, request):
+        self._r = request
+        self._new_headers = {}
+        self.type = urlparse(self._r.url).scheme
+    
+    def get_full_url(self):
+        # Only return the response's URL if the user hadn't set the Host
+        # header
+        if not self._r.headers.get('Host'):
+            return self._r.url
+        # If they did set it, retrieve it and reconstruct the expected domain
+*       host = to_native_string(self._r.headers['Host'], encoding='utf-8')
+        parsed = urlparse(self._r.url)
+        # Reconstruct the URL as we expect it
+        return urlunparse([
+            parsed.scheme, host, parsed.path, parsed.params, parsed.query,
+            parsed.fragment
+        ])
 ```
 
 ---
@@ -143,23 +174,60 @@ class: nord-dark, center, middle
 
 # Dark Mode
 
-<small>.letter-spacing-20[Though can also do this with a browser plugin]</small>
+<small>For those serious moments</small>
 
 ---
 
-## LaTex Support
+## Table sample
 
-$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+
+| Name | Price | Number |
+| ---- | ---- | ----: |
+| Banana | $1  | 5    |
+| Apple | $1  | 6    |
+| Strawberry | $1  | 7    |
+
 
 ---
-# I like because
+
+## Columns
+
+.left-column[
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+]
+
+.right-column[
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+]
+
+???
+
+Things like columns and picture layouts require a bit more work though there are some good samples available
+
+---
+
+## Video
+
+<video width="100%" height="420" controls>
+    <source src="static/funny.mp4" type="video/mp4">
+</video>
+
+---
+.left-column[# Pros
+- Free
 - Simple
 - Markdown
-- Can host on your blog
-- HTML and CSS
-- It's free
+- Can host anywhere
+- HTML and CSS]
+.right-column[# Cons
+- extremely sensitive to scrolling
+- no drag-n-drop
+- layout requires effort
+- if you are a perfectionist you might continue fiddling until midnight on your 5 minute presentation
+]
+
 
 ---
 
-# It works on a tablet or phone
+# And last but not least...
 

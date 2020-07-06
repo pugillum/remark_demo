@@ -1,0 +1,79 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+        
+body {
+    font-family: 'Futura';
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Futura';
+    font-weight: normal;
+}
+
+.remark-slide-content ul {
+    font-size: 30px;
+}
+
+.remark-slide-content ol {
+    font-size: 30px;
+}
+
+.white {
+    color:white
+}
+
+.red {
+    color:red
+}
+
+.orange {
+    color:orange
+}
+
+.yellow {
+    color:yellow
+}
+
+.blue {
+    color:blue
+}
+
+.green {
+    color:green
+}
+
+.indigo {
+    color:indigo
+}
+
+.column-2 {
+    column-count: 2;
+    column-gap: 3em;
+    column-rule: 0.2px solid rgba(0, 0, 0, 0.2);
+  }
+
+ 
+.column-3 {
+column-count: 3;
+column-gap: 3em;
+column-rule: 0.2px solid rgba(0, 0, 0, 0.2);
+}
+
+/* .remark-code,
+.remark-inline-code {
+    font-family: 'Ubuntu Mono';
+    font-size: 25px;
+} */
+
+.left-column  { width: 49%; float: left; }
+.right-column { width: 49%; float: right; }
+
+.left-column-33  { width: 33%; float: left; }
+.right-column-66 { width: 66%; float: right; }
+
+.left-column-66  { width: 66%; float: left; }
+.right-column-33 { width: 33%; float: right; }
+
+.right-column ~ p { clear: both; }
+.right-column ~ ul { clear: both; }
