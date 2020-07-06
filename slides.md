@@ -1,7 +1,7 @@
 class: center, middle
 
 # Remark
-An alternative to PowerPoint or Deckset
+A presentation about a presentation tool
 
 ---
 class: center, middle
@@ -9,13 +9,15 @@ class: center, middle
 # How it works
 ---
 
-1.Define your content, layout and styling in a markdown file
+### 1. Content, layout and styling in markdown
 
 
 ```markdown
     ---
     class: center, middle
     # Cover slide
+    background-image: url(images/slides/background.jpg)
+    background-size: contain
     ---
     # Slide with **meme**
     .width-80[
@@ -31,7 +33,7 @@ class: center, middle
 ```
 ---
 
-2.Create an HTML wrapper linking `remark.js`
+### 2. Create an HTML file
 ```html
 <!DOCTYPE html>
 <html>
@@ -52,9 +54,16 @@ class: center, middle
   </body>
 </html>
 ```
+---
+
+### 3. Open your file
+- directly in browser, or
+- using something like `http.server`
 
 ---
 class: center, middle
+background-image: url(images/slides/background.jpg)
+background-size: contain
 # Cover slide
 ---
 # Slide with **meme**
@@ -90,11 +99,11 @@ layout: true
 
 ---
 
-# Presentation mode with the touch of a button (the P key)
+# Presentation mode (the P key)
 
 ???
 
-And look you can add some notes too
+# And look you can add some notes too
 
 ---
 
@@ -102,19 +111,55 @@ And look you can add some notes too
 
 ---
 
-# Cloning with the touch of a button (the C key)
+# Cloning (the C key)
 
 ---
 layout: true
 
 ---
-# Some other nice features
+## Some other nice features
 - comments
 - template slides
 - slide properties
 - inline CSS
 - syntax highlighting
+- slide linking
+
+---
+# But wait, there's more!
 
 ---
 
+## Code formatting and highlighting
+```ts
+def add_some_numbers(a,b):
+*   a, b = "wtf!", "wtf!"
+    return a + b
+```
+
+---
+
+class: nord-dark, center, middle
+
+# Dark Mode
+
+<small>.letter-spacing-20[Though can also do this with a browser plugin]</small>
+
+---
+
+## LaTex Support
+
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+
+---
+# I like because
+- Simple
+- Markdown
+- Can host on your blog
+- HTML and CSS
+- It's free
+
+---
+
+# It works on a tablet or phone
 
