@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="./css/abs-layout.css" />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/nord-dark.css" />
 </head>
 
 <body>
@@ -13,8 +14,40 @@
     </script>
     <script>
         var slideshow = remark.create({
-            sourceUrl: 'slides.md'
+            sourceUrl: 'slides.md',
+            highlightLines: true,
+            countIncrementalSlides: false,
+            highlightStyle: "github"
         });
+    </script>
+    <script id="MathJax-script" async src="js/tex-mml-chtml.js"></script>
+    <script>
+
+        // LaTeX
+        MathJax = {
+            loader: {
+                load: ["input/tex-base", "[tex]/newcommand", "output/chtml"],
+            },
+            tex: {
+                inlineMath: [
+                    ["$", "$"],
+                    ["\\(", "\\)"],
+                ],
+            },
+            options: {
+                skipHtmlTags: [
+                    "script",
+                    "noscript",
+                    "style",
+                    "textarea",
+                    "pre",
+                    "code",
+                    "annotation",
+                    "annotation-xml",
+                ],
+                ignoreHtmlClass: "tex2jax_ignore",
+            },
+        };
     </script>
 </body>
 
