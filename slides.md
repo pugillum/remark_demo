@@ -178,15 +178,15 @@ class: nord-dark, center, middle
 
 ---
 
-## Table sample
+## Table
 
-
+.bla[
 | Name | Price | Number |
 | ---- | ---- | ----: |
-| Banana | $1  | 5    |
-| Apple | $1  | 6    |
-| Strawberry | $1  | 7    |
-
+| Banana | €1  | 5    |
+| Apple | €1  | 6    |
+| .red[Strawberry] | €1  | 7    |
+]
 
 ---
 

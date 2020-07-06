@@ -19,6 +19,10 @@ h3 {
     font-size: 30px;
 }
 
+.remark-slide-content p {
+    font-size: 30px;
+}
+
 .white {
     color:white
 }
@@ -77,3 +81,25 @@ column-rule: 0.2px solid rgba(0, 0, 0, 0.2);
 
 .right-column ~ p { clear: both; }
 .right-column ~ ul { clear: both; }
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    display: block;
+    width: 100%;
+    overflow: auto;
+    font-size: 40px;
+}
+table tr:nth-child(2n) {
+    background-color: #f6f8fa;
+}
+table th,
+table td {
+    display: table-cell;
+    vertical-align: inherit;
+    padding: 0.15em 0.3em;
+    border: 1px solid #dfe2e5;
+}
+table th {
+    font-weight: bold;
+}
