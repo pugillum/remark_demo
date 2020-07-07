@@ -213,9 +213,14 @@ Things like columns and picture layouts require a bit more work though there are
 
 ---
 
-## GIFs
+## Latex
 
-<iframe src="https://giphy.com/embed/94iS62lx8CRQA" width="700" height="471" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+$$e^{i\pi} + 1 = 0$$
+
+---
+
+## GIFs
+<iframe src="https://giphy.com/embed/3ov9ka9STq1X9ezcoo" width="700" height="471" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
 ---
 .left-column[# Pros
