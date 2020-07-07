@@ -88,7 +88,7 @@ table {
     display: block;
     width: 100%;
     overflow: auto;
-    font-size: 40px;
+    font-size: 30px;
 }
 table tr:nth-child(2n) {
     background-color: #f6f8fa;
@@ -102,4 +102,26 @@ table td {
 }
 table th {
     font-weight: bold;
+}
+
+div.my-footer {
+    font-size: 20pt;
+	text-align: center;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	height: 30px;
+	width: 100%;
+}
+
+div.my-footer p {
+    margin-top: 10px;
+    height: 40px;
+}
+
+div.my-footer img {
+	height: 50px;
+	bottom: 0px;
+	left: 0px;
+	position: fixed;
 }

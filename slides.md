@@ -6,6 +6,9 @@ A presentation about a presentation tool
 
 ???
 
+A few weeks ago, discussion about presentation 
+- Googled, found a tool
+- Rens contacted me asking if I'd used the tool - which I hadn't
 An interesting way to make a slide deck using Remark
 
 ---
@@ -89,10 +92,12 @@ background-size: contain
 # .white[Cover slide]
 
 ---
+
 # Slide with **meme**
 ![](images/slides/meme.jpg)
 
 ---
+
 # This
 
 1. .red[has]
@@ -143,6 +148,8 @@ layout: true
 - timers
 - comments
 
+<div class="my-footer"><img src="images/slides/gdd.png" /><-- Behold, a footer</div>
+
 ---
 
 ## Code formatting and highlighting
@@ -178,7 +185,7 @@ class: nord-dark, center, middle
 
 ---
 
-## Table
+## Table styling
 
 .bla[
 | Name | Price | Number |
@@ -206,11 +213,9 @@ Things like columns and picture layouts require a bit more work though there are
 
 ---
 
-## Video
+## GIFs
 
-<video width="100%" height="420" controls>
-    <source src="static/funny.mp4" type="video/mp4">
-</video>
+<iframe src="https://giphy.com/embed/94iS62lx8CRQA" width="700" height="471" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
 ---
 .left-column[# Pros
@@ -223,11 +228,11 @@ Things like columns and picture layouts require a bit more work though there are
 - extremely sensitive to scrolling
 - no drag-n-drop
 - layout requires effort
-- if you are a perfectionist you might continue fiddling until midnight on your 5 minute presentation
+- it may lead to fiddling until midnight on a 5 minute presentation
 ]
 
 
 ---
 
-# And last but not least...
+# And a last nifty feature...
 
