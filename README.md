@@ -12,7 +12,7 @@ For local you'll need a web server which can be provided something like `http.se
 |      |      |      |
 |      |      |      |
 
-
+To run it, use the remark_host virtual env or `python3 -m http.server`
 
 ## Intro
 
