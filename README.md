@@ -13,6 +13,7 @@ Some keyboard shortcuts:
 - P - Presenter mode
 - C - Clone for multiple screen
 - h - help
+- f - fullscreen
 
 
 ## What I like
@@ -35,5 +36,25 @@ The default screen ratio can be changed to 16:9 (see the `index.html` file)
 ## PDF printing
 
 As mentioned in the [documentation](https://github.com/gnab/remark), printing to PDF 
-can be done using Google Chrome's print
-but there may be some issue with styling.
+can be done using Google Chrome's print but will not have a great layout. To correct
+this, add the following to the CSS:
+```
+@page {
+  size: 1210px 681px;
+  margin: 0;
+}
+
+@media print {
+  .remark-slide-scaler {
+    width: 100% !important;
+    height: 100% !important;
+    transform: scale(1) !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+}
+```
+
+## CSS
+
+Note that the CSS I've included here is a real mish-mash of me trying things out!
