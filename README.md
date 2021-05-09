@@ -1,50 +1,19 @@
 # Remarkjs
 
-Single file, link to markdown files
-P - Presenter mode
-C - Clone for multiple screen
+A little demo I made to show what's possible with [remark](https://github.com/gnab/remark), 
+a tool for rendering markdown as an HTML slideshow.
 
-For local you'll need a web server which can be provided something like `http.server`
+To run you'll need a light http server, Python's [http.server](https://docs.python.org/3/library/http.server.html)
+works well.  To run:
+```
+python -m http.server
+```
 
-|      |      |      |
-| ---- | ---- | ---- |
-|      |      |      |
-|      |      |      |
-|      |      |      |
+Some keyboard shortcuts:
+- P - Presenter mode
+- C - Clone for multiple screen
+- h - help
 
-
-
-## Intro
-
-
-
-### How it works - basic :
-
-- markdown embedded in HTML
-  - show markdown
-  - Show HTML
-    - styling
-    - Import of remarkjs
-- Configure fonts
-
-### 
-
-
-
-### Presentation:
-
-P - Presentatio mode
-
-C - Extra screen
-
-## Impress people time
-
-https://github.com/1-2-3/remark-it/blob/master/index-en_US.html
-
-### Extra
-
-- Add presentation notes
-- PDF export?
 
 ## What I like
 
@@ -57,21 +26,14 @@ https://github.com/1-2-3/remark-it/blob/master/index-en_US.html
 
 ## Styling
 
-How can I make it look wider??  Look at 
+The default screen ratio can be changed to 16:9 (see the `index.html` file)
 
 ## Extra Features
 
 - Hugo - [integrate with Hugo](https://github.com/gnab/remark/wiki/Using-with-Hugo)
 
-- Story
+## PDF printing
 
-  - Latex
-  - Music
-
-  Showing colors from 
-
-## Piece de resistance
-
-Show it on a tablet:
-
-- requires hosting on Github - how to do that
+As mentioned in the [documentation](https://github.com/gnab/remark), printing to PDF 
+can be done using Google Chrome's print
+but there may be some issue with styling.
